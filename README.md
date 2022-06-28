@@ -3,7 +3,7 @@ This project is a template for Docker, Django, PosgreSQL, NGINX
 
 docker-compose up --build
 docker-compose exec web python manage.py migrate --noinput
-docker-compose down
+docker-compose down -v
 
 docker-compose -f docker-compose.prod.yml down -v
 docker-compose -f docker-compose.prod.yml up --build
